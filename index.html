@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sneakers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container active">
+        <div class="navbar">
+            <img src="images/icon-menu.svg" class="bx-x" id="menu-icon">
+            <img src="images/logo.svg" class="logo">
+            <nav>
+                <ul id="navlist" class="active">
+                    <li><a href="">Collection</a></li>
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li> 
+                </ul>  
+            </nav>
+            <button type="button" id="btn"><img src="images/icon-cart.svg" class="cart"></button>
+            <img src="images/image-avatar.png" class="avatar">
+        </div><hr>
+
+        <div class="content">
+            <img src="" id="large-image" class="large-image">
+
+            <div class="small-images">
+                <img src="images/image-product-1-thumbnail.jpg" onclick="setLargeImage(0)" class="sm-1">
+                <img src="images/image-product-2-thumbnail.jpg"  onclick="setLargeImage(1)" class="sm-2">
+                <img src="images/image-product-3-thumbnail.jpg"  onclick="setLargeImage(2)" class="sm-3">
+                <img src="images/image-product-4-thumbnail.jpg"  onclick="setLargeImage(3)" class="sm-4">
+            </div>
+        </div>
+
+        <div class="text">
+            <p class="header">Sneaker Company</p>
+            <h1>Fall Limited Edition <br> Sneakers</h1>
+            <p class="info">These low profile sneakers are your perfect casual wear companion.
+                Featuring a durable rubber outer sole, they'll withstand everything the weather 
+                can offer.
+            </p>
+            <div class="amount">
+                <p class="numeral">$125.00</p>
+                <div class="card1">50%</div>
+            </div>
+
+            <div class="covering">
+                <div class="card2">
+                    <img src="images/icon-minus.svg" class="minus">
+                    <p class="zero">0</p>
+                    <img src="images/icon-plus.svg" class="plus">
+                </div>
+                <div class="card3">
+                    <button onclick="setCard()"><img src="images/icon-cart.svg" class="cart1"><a href="#">Add to cart</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="message">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
